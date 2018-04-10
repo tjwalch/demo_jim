@@ -1,0 +1,6 @@
+Django==2.0.4
+pytz==2018.4
+django-model-utils
+django-js-reverse
+model-mommy
+python-dateutil

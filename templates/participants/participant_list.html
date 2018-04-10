@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Deltagare</h1>
+    <table>
+        {% for p in object_list %}
+            <tr>
+                <td>
+                    {{ p }}
+                </td>
+                <td>
+                    {{ p.cost }}
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

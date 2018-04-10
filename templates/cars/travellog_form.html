@@ -1,0 +1,17 @@
+{% load i18n  %}
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans "Körjournal" %}</title>
+</head>
+<body>
+    <h1>{% trans "Fyll i körjournal" %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="{% trans 'Spara' %}">
+    </form>
+    {{ form.media.js }}
+</body>
+</html>
